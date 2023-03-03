@@ -7,4 +7,4 @@
 4. Solving CP problems
 
 ### ONGOING
-- JAVA PROGRAMMING
+- JAVA PROGRAMMING ![Progress](https://progress-bar.dev/71/)
