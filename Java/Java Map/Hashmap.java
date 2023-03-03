@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.Map.Entry;
 
 import javax.xml.transform.Source;
 
@@ -52,6 +53,36 @@ public class Hashmap {
 
         System.out.println("Data contains Kathmandu: "+data.containsValue("Kathmandu"));
 
+        //iterate through hashmaps
 
+        //only keys
+        for(String keys : data.keySet()){
+            System.out.print(keys+"\t");
+        }
+        System.out.println();
+
+        //only values 
+        for( String values : data.values()){
+            System.out.print(values+"\t");
+        }
+        System.out.println();
+
+        //whole data set(keys + values)
+        for(Entry<String, String> set : data.entrySet()){
+            System.out.print(set+"\t");
+        }
+        System.out.println();
+
+
+        /*
+         *  While creating a hashmap, we can include optional parameters: capacity and load factor. For example,
+
+            HashMap<K, V> numbers = new HashMap<>(8, 0.6f);
+            Here,
+
+            8 (capacity is 8) - This means it can store 8 entries.
+            0.6f (load factor is 0.6) - This means whenever our hash table is filled by 60%, the entries are moved to a new hash table double the size of the original hash table.
+            If the optional parameters not used, then the default capacity will be 16 and the default load factor will be 0.75.
+         */
     }
 }
